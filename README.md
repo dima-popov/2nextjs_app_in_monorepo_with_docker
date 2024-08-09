@@ -1,14 +1,6 @@
 # Turborepo Docker starter
 
-This is an official Docker starter Turborepo.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest -e with-docker
-```
+This is an Docker starter Turborepo.
 
 ## What's inside?
 
@@ -17,7 +9,7 @@ This Turborepo includes the following:
 ### Apps and Packages
 
 - `web`: a [Next.js](https://nextjs.org/) app
-- `api`: an [Express](https://expressjs.com/) server
+- `app`: a [Next.js](https://nextjs.org/) app
 - `@repo/ui`: a React component library
 - `@repo/logger`: Isomorphic logger (a small wrapper around console.log)
 - `@repo/eslint-config`: ESLint presets
@@ -33,6 +25,7 @@ This repo is configured to be built with Docker, and Docker compose. To build al
 ```
 # Create a network, which allows containers to communicate
 # with each other, by using their container name as a hostname
+
 docker network create app_network
 
 # Build prod using new BuildKit engine
